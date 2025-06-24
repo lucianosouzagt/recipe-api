@@ -12,7 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia a aplicação
-COPY . .
+COPY . /app
 
 # Exponha a porta
 EXPOSE 8000
